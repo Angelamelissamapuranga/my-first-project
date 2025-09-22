@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>squash sport</title>
+     <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>🏓 Squash</h1>
+      <h2>My favourite hobby</h2>
+     
+      
+      
+       <a href="https://en.wikipedia.org/wiki/Squash_(sport)"></a>
+      <img
+        src="https://d27fp5ulgfd7w2.cloudfront.net/wp-content/uploads/2024/04/09173311/2646-1920-1-1024x576.jpg"
+        alt=""
+         class="squash-first-picture"
+      />
+      </a>
+      <div class="grid">
+      <img src="https://cdn.prod.website-files.com/5d655866b2055c7cbb5d79a1/64039198697b1399ef0d35d3_022323_ErinVanDriel007.webp" alt="">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/57a370e9e58c6272ab5b8ec5/1634140390328-I1HSV95QSF3BJ1MMAO9F/istockphoto-524857207-170667a.jpg"
+        alt=""
+      />
+      <img
+        src="https://www.oneleisure.net/media/2182/squash.png?crop=0.129302752293578,0,0.20188990825688072,0&cropmode=percentage&width=500&height=500&rnd=132410210472670000"
+        alt=""
+      />
+      <img
+        src="https://www.sweatband.com/cdn/shop/articles/Complete_Guide_to_Squash_Rackets_5326a816-5340-4e42-b4ec-2d840fcb2fbb.jpg?v=1742806792&width=1920"
+        alt=""
+      />
+      </div>
+      <p>
+        <strong>Squash</strong> is a racquet sport played indoors on a four-walled court where
+        two or four players (singles or doubles) alternate hitting a small,
+        hollow rubber ball with their racquets. The goal is to make it
+        impossible for your opponent to return the ball to the front wall within
+        the boundaries of the court.
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Squash_(sport)">learn more</a>
+      </p>
+      <div class = "button">
+      <button id="detailsbutton" >sign up today!!</button>
+      </div>
+    
+    
+    <footer>Coded 👩🏽‍💻 by  Angela Melissa Mapuranga</footer>
+    </div>
+    <script>
+        function details(){
+            let name = prompt ("What is your Name?");
+            let email = prompt ("What is your email?");
+           alert("Hello  " +  name  + " , we will be in touch soon");
+        }
+        let detailsButton = document.querySelector("#detailsbutton");
+      detailsButton.addEventListener("click", details);
+
+        function themeChange () {
+            let body = document.querySelector("body");
+
+         if (body.classList.contains("dark")){
+            body.classList.remove("dark");
+         }
+         else {
+            body.classList.add("dark");
+         }
+        }
+        let themeButton  = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", themeChange);
+    </script>
+  </body>
+</html>
